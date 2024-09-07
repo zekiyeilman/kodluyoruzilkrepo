@@ -1,0 +1,27 @@
+[16,21,11,8,12,22] 
+merge sort diziyi sürekli sağ sol olmak üzere tek eleman kalıncaya dek ikiye böler
+**dizinin ikiye bölünmesi**
+sol dizi [16,21,11]
+sağ dizi [8,12,22] 
+**sol dizinin ikiye bölünmesi**
+sol sol [16,21] 
+sol sağ [11]
+**sol sol dizinin bölünümü**
+sol sol sol [16]
+sol sol sağ [11]
+şimdiyse sıralayıp sol diziyi birleştirelim
+[11,16]
+[11,16,21]
+**sağ dizinin ikiye bölünmesi**
+sağ sol [8,12]
+sağ sağ [22]
+**sağ sağ dizinin ikiiye bölünmesi**
+sağ sol sol [8]
+sağ sağ sağ [12]
+şimdiyse sıralayıp sağ diziyi birleştirelim
+[8,12]
+[8,12,22]
+son aşama sol dizi ve sağ diziyi sıralayıp birleştirelim
+[8, 11, 12, 16, 21, 22]
+Big-O gösterimi her zaman 2 ye bölündüğünden aynıdır:
+O(n log n)
