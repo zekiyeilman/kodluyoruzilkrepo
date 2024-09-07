@@ -1,0 +1,19 @@
+[22, 27, 16, 2, 18, 6]
+27 değerinden büyük değer bulunana kadar geriye doğru karşılaştırılır,yoksa sıradaki elemana yai 16 ya geçilir
+burda 16 değeri bu şartı sağladığından geriye doğru tarama yapılarak 16 nın doğru yeri bulunur
+[22, 16 ,27 , 2, 18, 6]
+[16, 22 ,27 , 2, 18, 6]
+sıradaki eleman 2
+[16, 22 ,2 , 27, 18, 6]
+[16, 2 ,22 , 27, 18, 6]
+[2, 16, 22 , 27, 18, 6]
+sıradaki 18
+[2, 16, 22 ,18, 27,  6]
+[2, 16,18, 22 , 27,  6]
+sıradaki 6
+[2, 16,18, 22 , 6,  27]
+[2, 16,18, 6 , 22,  27]
+[2, 16,6, 18, 22,  27]
+[2, 6,16, 18, 22,  27]
+18 sayısı ortada kaldı ve 2 adımda hallettik,bu average case olur
+Average case: O(n²)
