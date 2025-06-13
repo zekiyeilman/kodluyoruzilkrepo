@@ -1,23 +1,22 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root"; // XAMPP default password
+$password = "root"; 
 
 try {
-    // PDO bağlantısı - önce veritabanı olmadan bağlan
+    
     $conn = new PDO("mysql:host=$servername;charset=utf8", $username, $password);
     
-    // Hata modunu ayarla
+
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    // Veritabanını oluştur
     $sql = "CREATE DATABASE IF NOT EXISTS bootcamp_sistemi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci";
     $conn->exec($sql);
     
-    // Veritabanını seç
+    
     $conn->exec("USE bootcamp_sistemi");
     
-    // Eğitmenler tablosunu oluştur
+   
     $sql = "CREATE TABLE IF NOT EXISTS egitmenler (
         id INT AUTO_INCREMENT PRIMARY KEY,
         ad VARCHAR(50) NOT NULL,
@@ -30,7 +29,7 @@ try {
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci";
     $conn->exec($sql);
     
-    // Türkçe karakter desteği
+   
     $conn->exec("SET NAMES utf8");
     
 } catch(PDOException $e) {

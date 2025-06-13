@@ -9,7 +9,7 @@ if (empty($id)) {
 }
 
 try {
-    // Ders bilgilerini al
+  
     $stmt = $conn->prepare("
         SELECT d.*, b.bootcamp_ad
         FROM dersler d

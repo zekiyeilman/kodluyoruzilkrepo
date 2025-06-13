@@ -9,7 +9,7 @@ if (empty($id)) {
 }
 
 try {
-    // Bootcamp bilgilerini al
+   
     $stmt = $conn->prepare("
         SELECT b.*, CONCAT(e.egitmen_ad, ' ', e.egitmen_soyad) as egitmen_adsoyad
         FROM bootcampler b
